@@ -147,7 +147,7 @@
   before_build:
   - ps: >-
 
-      nuget restore source\nanoFramework.System.DateTime.Nuget.sln
+      nuget restore source\nanoFramework.System.DateTime.sln
 
       gitversion /l console /output buildserver /updateAssemblyInfo AssemblyInfo2.cs /ensureassemblyinfo
 
@@ -256,7 +256,7 @@
   before_build:
   - ps: >-
 
-      nuget restore source\nanoFramework.System.DateTime.Nuget.sln
+      nuget restore source\nanoFramework.System.DateTime.sln
         
       gitversion /l console /output buildserver /updateAssemblyInfo AssemblyInfo2.cs /ensureassemblyinfo
 
