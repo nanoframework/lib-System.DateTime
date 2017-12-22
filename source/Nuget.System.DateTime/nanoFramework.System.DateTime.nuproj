@@ -30,6 +30,11 @@
   <ItemGroup>
     <Folder Include="lib\" />
   </ItemGroup>
+  <ItemGroup>
+    <Dependency Include="nanoFramework.CoreLibrary">
+      <Version>[1.0.0-preview042]</Version>
+    </Dependency>
+  </ItemGroup>  
   <PropertyGroup Label="Globals">
     <ProjectGuid>B98F2C0F-28C9-4345-8C65-C4BDD75BB7FC</ProjectGuid>
   </PropertyGroup>
