@@ -51,6 +51,7 @@
 
   before_build:
   - ps: >-
+      nuget sources add -name MyGet -Source https://www.myget.org/F/nanoframework-dev
 
       nuget restore source\nanoFramework.System.DateTime.sln
 
@@ -146,6 +147,7 @@
 
   before_build:
   - ps: >-
+      nuget sources add -name MyGet -Source https://www.myget.org/F/nanoframework-dev
 
       nuget restore source\nanoFramework.System.DateTime.sln
 
@@ -255,6 +257,7 @@
 
   before_build:
   - ps: >-
+      nuget sources add -name MyGet -Source https://www.myget.org/F/nanoframework-dev
 
       nuget restore source\nanoFramework.System.DateTime.sln
         
