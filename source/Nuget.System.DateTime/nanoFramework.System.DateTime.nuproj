@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\bin\$(Configuration)\System.DateTime.dll">
+      <Link>lib\System.DateTime.dll</Link>
+    </Content>
+    <Content Include="..\bin\$(Configuration)\System.DateTime.pdb">
+      <Link>lib\System.DateTime.pdb</Link>
+    </Content>
+    <Content Include="..\bin\$(Configuration)\System.DateTime.pdbx">
+      <Link>lib\System.DateTime.pdbx</Link>
+    </Content>
+    <Content Include="..\bin\$(Configuration)\System.DateTime.pe">
+      <Link>lib\System.DateTime.pe</Link>
+    </Content>
+    <Content Include="..\bin\$(Configuration)\System.DateTime.xml">
+      <Link>lib\System.DateTime.xml</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>B98F2C0F-28C9-4345-8C65-C4BDD75BB7FC</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath>..\packages\NuProj.0.20.4-beta\tools\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>nanoFramework.System.DateTime</Id>
+    <Version>$(GitVersion_NuGetVersionV2)</Version>
+    <Title>nanoFramework.System.DateTime</Title>
+    <Authors>nanoFramework project contributors</Authors>
+    <Owners>nanoFramework project contributors</Owners>
+    <Summary>nanoFramework.System.DateTime assembly for nanoFramework C# projects.</Summary>
+    <Description>This package includes the System.DateTime assembly for nanoFramework C# projects.</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>https://github.com/nanoframework/nf-class-libraries</ProjectUrl>
+    <LicenseUrl>
+    </LicenseUrl>
+    <Copyright>Copyright (c) 2017 The nanoFramework project contributors</Copyright>
+    <Tags>nanoFramework C# csharp netmf netnf System.DateTime</Tags>
+    <IconUrl>https://secure.gravatar.com/avatar/97d0e092247f0716db6d4b47b7d1d1ad</IconUrl>
+    <GenerateSymbolPackage>false</GenerateSymbolPackage>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
