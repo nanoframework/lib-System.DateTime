@@ -10,7 +10,7 @@ namespace nanoFramework.DateTime
     /// <summary>
     /// Provides a set of methods that help developers to manage the RTC (Real Time Clock) on the target device.
     /// </summary>
-    public class RTC
+    public static class RTC
     {
         /// <summary>
         /// Sets the current system time and date.
