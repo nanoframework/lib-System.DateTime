@@ -16,8 +16,8 @@ It's provided as a separate assembly to decrease the overall size of mscorlib (m
 
 | Component | Build Status | NuGet Package |
 |:-|---|---|
-| System.DateTime | [![Build status](https://ci.appveyor.com/api/projects/status/5b37qa4h0o2ci3db/branch/master?svg=true)](https://ci.appveyor.com/project/nfbot/lib-System.DateTime/branch/master) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.System.DateTime.svg)](https://www.nuget.org/packages/nanoFramework.System.DateTime/)  |
-| System.DateTime (preview) | [![Build status](https://ci.appveyor.com/api/projects/status/5b37qa4h0o2ci3db?svg=true)](https://ci.appveyor.com/project/nfbot/lib-System.DateTime) | [![MyGet Pre Release](https://img.shields.io/myget/nanoframework-dev/vpre/nanoFramework.System.DateTime.svg)](https://www.myget.org/feed/nanoframework-dev/package/nuget/nanoFramework.System.DateTime) |
+| System.DateTime | [![Build status](https://ci.appveyor.com/api/projects/status/j2y9a1112w29iuj1?svg=true)](https://ci.appveyor.com/project/nfbot/lib-system-datetime/master) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.System.DateTime.svg)](https://www.nuget.org/packages/nanoFramework.System.DateTime/)  |
+| System.DateTime (preview) | [![Build status](https://ci.appveyor.com/api/projects/status/j2y9a1112w29iuj1/branch/develop?svg=true)](https://ci.appveyor.com/project/nfbot/lib-system-datetime/branch/develop) | [![MyGet Pre Release](https://img.shields.io/myget/nanoframework-dev/vpre/nanoFramework.System.DateTime.svg)](https://www.myget.org/feed/nanoframework-dev/package/nuget/nanoFramework.System.DateTime) |
 
 
 ## Feedback and documentation
