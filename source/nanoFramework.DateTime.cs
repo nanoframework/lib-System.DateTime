@@ -31,7 +31,7 @@ namespace nanoFramework.DateTime
         /// <remarks>This method is specific to nanoFramework. The actual availability of the resulting feature depends on the availability on target platform that's running the nanoCLR.</remarks>
         public static bool SetAlarm(System.DateTime time)
         {
-            return Native_RTC_SetAlarm(time.Year, (byte)(time.Month - 1), (byte)time.Day, (byte)time.DayOfWeek, (byte)time.Hour, (byte)time.Minute, (byte)time.Second);
+            return Native_RTC_SetAlarm(time.Year, (byte)time.Month, (byte)time.Day, (byte)time.DayOfWeek, (byte)time.Hour, (byte)time.Minute, (byte)time.Second);
         }
 
 
