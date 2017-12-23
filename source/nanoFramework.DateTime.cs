@@ -20,7 +20,7 @@ namespace nanoFramework.DateTime
         /// <remarks>This method is specific to nanoFramework. The actual availability of the resulting feature depends on the availability on target platform that's running the nanoCLR.</remarks>
         public static bool SetSystemTime(System.DateTime time)
         {
-            return Native_RTC_SetSystemTime((byte)(time.Year - 2000), (byte)time.Month, (byte)time.Day, (byte)time.DayOfWeek, (byte)time.Hour, (byte)time.Minute, (byte)time.Second);
+            return Native_RTC_SetSystemTime(time.Year, (byte)time.Month, (byte)time.Day, (byte)time.DayOfWeek, (byte)time.Hour, (byte)time.Minute, (byte)time.Second);
         }
 
         /// <summary>
@@ -31,17 +31,17 @@ namespace nanoFramework.DateTime
         /// <remarks>This method is specific to nanoFramework. The actual availability of the resulting feature depends on the availability on target platform that's running the nanoCLR.</remarks>
         public static bool SetAlarm(System.DateTime time)
         {
-            return Native_RTC_SetAlarm((byte)(time.Year - 2000), (byte)time.Month, (byte)time.Day, (byte)time.DayOfWeek, (byte)time.Hour, (byte)time.Minute, (byte)time.Second);
+            return Native_RTC_SetAlarm(time.Year, (byte)(time.Month - 1), (byte)time.Day, (byte)time.DayOfWeek, (byte)time.Hour, (byte)time.Minute, (byte)time.Second);
         }
 
 
         #region external methods declarations
 
         [MethodImpl(MethodImplOptions.InternalCall)]
-        private static extern bool Native_RTC_SetSystemTime(byte year, byte month, byte day, byte dayOfWeek, byte hours, byte minutes, byte seconds);
+        private static extern bool Native_RTC_SetSystemTime(int year, byte month, byte day, byte dayOfWeek, byte hours, byte minutes, byte seconds);
 
         [MethodImpl(MethodImplOptions.InternalCall)]
-        private static extern bool Native_RTC_SetAlarm(byte year, byte month, byte day, byte dayOfWeek, byte hours, byte minutes, byte seconds);
+        private static extern bool Native_RTC_SetAlarm(int year, byte month, byte day, byte dayOfWeek, byte hours, byte minutes, byte seconds);
 
         #endregion
     }
